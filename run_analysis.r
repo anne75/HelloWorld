@@ -74,6 +74,6 @@ names(dataset)<-my_features
 #I make the new dataset with the average of each variable for each activity and each subject
 tidyData<-aggregate(.~subject+activity,dataset,FUN=mean)
 
-write.table(tidyData,"tidyData.csv",sep="\t",row.names=F)
+write.table(tidyData,"tidyData.txt",sep="\t",row.names=F)
 
 
